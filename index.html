@@ -2,44 +2,139 @@
 <html lang="en-gb">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lernantino // Web Developer</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
+
+<!-- Header -->
+<header id="site-header" class="header">
+    <h1 class="header-title" title="Your Name" tabindex="0">Your Name</h1>
+    <nav class="nav-menu">
+        <ul id="primary-menu" class="menu" role="menubar">
+            <li class="menu-item" role="menuitem">
+                <a href="#about" title="About Me">About Me</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+                <a href="#work" title="My Selected Works">Work</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+                <a href="#" title="Download Resume" target="_blank">Resume</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+                <a href="#contact" title="Contact Me">Contact</a>
+            </li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+<!-- Hero -->
+<section id="site-hero" class="hero hero-banner" aria-label="Hero Section" tabindex="0">
+    <p class="hero-greeting">Hi, there</p>
+    <div class="hero-title">
+        <h2 title="Add title here.">Cool subtitle here!</h2>
+        <p class="hero-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#" title="Learn More">Learn More</a>
     </div>
-  </section>
+</section>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+<!-- Content -->
+<main id="site-main" class="container" tabindex="0">
+    <!-- About me -->
+    <section id="about" class="entry about" aria-label="About Me Section" tabindex="0">
+        <article class="entry-content about-container" tabindex="0">
+            <h2 class="entry-title about-title" title="About Me">About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, adipisci aspernatur dolores, dolorum ea eum
+                ex harum magni minus natus quis quisquam quod recusandae rem tempora tempore totam veniam voluptate.</p>
+        </article>
     </section>
+    <!-- Portfolio container -->
+    <section id="work" class="entry portfolio" aria-label="Selected Work Section" tabindex="0">
+        <article class="entry-content portfolio-container" tabindex="0">
+            <h2 class="entry-title portfolio-title" title="Selected Work">Selected Work</h2>
+            <p class="portfolio-message">Here are some of my works.</p>
+            <div class="portfolio-items">
+                <!-- Featured Portfolio Item -->
+                <div class="portfolio-item portfolio-item-featured">
+                    <figure class="portfolio-item-cover">
+                        <img class="portfolio-item-cover__background" src="#" alt="Project Alt Text">
+                    </figure>
+                    <!-- @TODO Add hyperlink to project. -->
+                    <div class="portfolio-item-cover__inner-container">
+                        <h3 class="portfolio-item-header" title="Project 1 Title">Project 1</h3>
+                        <p class="portfolio-item-details">Project 1 Details</p>
+                    </div>
+                </div>
+                <!-- Second Portfolio Item -->
+                <div class="portfolio-item">
+                    <figure class="portfolio-item-cover">
+                        <img class="portfolio-item-cover__background" src="#" alt="Project Alt Text">
+                    </figure>
+                    <div class="portfolio-item-cover__inner-container">
+                        <h3 class="portfolio-item-header" title="Project 2 Title">Project 2</h3>
+                        <p class="portfolio-item-details">Project 2 Details</p>
+                    </div>
+                </div>
+                <!-- Third Portfolio Item -->
+                <div class="portfolio-item">
+                    <figure class="portfolio-item-cover">
+                        <img class="portfolio-item-cover__background" src="#" alt="Project Alt Text">
+                    </figure>
+                    <div class="portfolio-item-cover__inner-container">
+                        <h3 class="portfolio-item-header" title="Project 3 Title">Project 3</h3>
+                        <p class="portfolio-item-details">Project 3 Details</p>
+                    </div>
+                </div>
+                <!-- Fourth Portfolio Item -->
+                <div class="portfolio-item">
+                    <figure class="portfolio-item-cover">
+                        <img class="portfolio-item-cover__background" src="#" alt="Project Alt Text">
+                    </figure>
+                    <div class="portfolio-item-cover__inner-container">
+                        <h3 class="portfolio-item-header" title="Project 4 Title">Project 4</h3>
+                        <p class="portfolio-item-details">Project 4 Details</p>
+                    </div>
+                </div>
+                <!-- Fifth Portfolio Item -->
+                <div class="portfolio-item">
+                    <figure class="portfolio-item-cover">
+                        <img class="portfolio-item-cover__background" src="#" alt="Project Alt Text">
+                    </figure>
+                    <div class="portfolio-item-cover__inner-container">
+                        <h3 class="portfolio-item-header" title="Project 5 Title">Project 5</h3>
+                        <p class="portfolio-item-details">Project 5 Details</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="entry contact" aria-label="Contact Me Section" tabindex="0">
+        <article class="entry-content contact-container" tabindex="0">
+            <h2 class="entry-title contact-title" title="Get in touch with me">Contact Me</h2>
+            <ul class="contact-links">
+                <li class="contact-link">
+                    <a class="contact-link-email" href="mailto:info@example.org" title="Email to me at info@example.org"
+                       target="_blank">info@example.org</a>
+                </li>
+                <li class="contact-link">
+                    <a class="contact-link-github" href="#" title="Visit my GitHub Profile" target="_blank">GitHub</a>
+                </li>
+                <li class="contact-link">
+                    <a class="contact-link-linkedin" href="#" target="_blank" title="Follow me on LinkedIn">LinkedIn</a>
+                </li>
+            </ul>
+        </article>
+    </section>
+</main>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+<footer id="site-footer" class="footer" tabindex="0">
+    <p>&copy; 2023 | Made with ❤️️ by Your Name</p>
+</footer>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
 </body>
-
 </html>
