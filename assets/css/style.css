@@ -1,23 +1,29 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
+/**
+ * Organisation of CSS files and CSS variables' naming convention are inspired
+ * by https://themes.trac.wordpress.org/browser/twentytwentyone/2.0/assets/sass.
+ *
+ * SETTINGS
+ * Global...............Defines CSS variables.
+ */
+@import "01-settings/settings.css";
+/**
+ * GENERIC
+ * Normalise............Normalize.css
+ * Reset................Resets specific elements and adds default values
+ */
+@import "02-generic/generic.css";
+/**
+ * UTILITIES
+ * Classes..............Utility classes
+ * Color Palette........Colour palettes
+ */
+@import "03-utilities/utilities.css";
+/**
+ * COMPONENTS
+ * Header..............Header Section
+ * Hero................Hero Section
+ * Main-Content........Selected Work Section
+ * Contact.............Contact Section
+ * Footer..............Footer Section
+ */
+@import "04-components/components.css";

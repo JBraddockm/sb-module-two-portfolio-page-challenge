@@ -1,0 +1,89 @@
+/* GLOBAL
+ * CSS variables
+ */
+
+:root {
+
+    --baseline-unit: 10px;
+
+    /* Font Family */
+    --global--font-primary: "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    sans-serif;
+
+    /* Font Sizes */
+    /* Generated with https://www.fluid-type-scale.com/. Ratio: 1.333. Base font-size: 16px. */
+    --global--font-size-sm: clamp(0.8rem, 0.05vw + 0.79rem, 0.84rem);
+    --global--font-size-base: clamp(1rem, 0.13vw + 0.97rem, 1.13rem);
+    --global--font-size-md: clamp(1.25rem, 0.26vw + 1.18rem, 1.5rem);
+    --global--font-size-lg: clamp(1.56rem, 0.46vw + 1.45rem, 2rem);
+    --global--font-size-xl: clamp(1.95rem, 0.75vw + 1.77rem, 2.66rem);
+    --global--font-size-xxl: clamp(2.44rem, 1.17vw + 2.15rem, 3.55rem);
+    --global--font-size-xxxl: clamp(3.05rem, 1.77vw + 2.61rem, 4.73rem);
+    --global--font-size-page-title: var(--global--font-size-xxl);
+    --global--letter-spacing: normal;
+
+    /* Line Height */
+    --global--line-height-body: 1.7;
+    --global--line-height-heading: 1.5;
+    --global--line-height-page-title: 1.1;
+
+    /* Headings */
+    --heading--font-family: var(--global--font-primary);
+
+    --heading--font-size-h6: var(--global--font-size-sm);
+    --heading--font-size-h5: var(--global--font-size-base);
+    --heading--font-size-h4: var(--global--font-size-md);
+    --heading--font-size-h3: var(--global--font-size-lg);
+    --heading--font-size-h2: var(--global--font-size-xl);
+    --heading--font-size-h1: var(--global--font-size-page-title);
+
+    --heading--letter-spacing-h6: 0.05em;
+    --heading--letter-spacing-h5: 0.05em;
+    --heading--letter-spacing-h4: var(--global--letter-spacing);
+    --heading--letter-spacing-h3: var(--global--letter-spacing);
+    --heading--letter-spacing-h2: var(--global--letter-spacing);
+    --heading--letter-spacing-h1: var(--global--letter-spacing);
+
+    --heading--line-height-h6: var(--global--line-height-heading);
+    --heading--line-height-h5: var(--global--line-height-heading);
+    --heading--line-height-h4: var(--global--line-height-heading);
+    --heading--line-height-h3: var(--global--line-height-heading);
+    --heading--line-height-h2: var(--global--line-height-heading);
+    --heading--line-height-h1: var(--global--line-height-page-title);
+
+    --heading--font-weight: 700;
+    --heading--font-weight-page-title: 700;
+    --heading--font-weight-strong: 600;
+
+    /* Colours */
+    /* Generated with https://coolors.co/fffcf2-ccc5b9-403d39-252422-eb5e28 */
+    --global--color-floral-white: #fffcf2ff;
+    --global--color-timberwolf: #ccc5b9ff;
+    --global--color-black-olive: #403d39ff;
+    --global--color-eerie-black: #252422ff;
+    --global--color-flame: #eb5e28ff;
+
+    --global--color-primary: var(--global--color-eerie-black);
+    --global--color-secondary: var(--global--color-black-olive);
+    --global--color-background: var(--global--color-floral-white);
+    --global--color-primary-hover: var(--global--color-primary);
+    --global--color-border: var(--global--color-flame);
+
+    /* Spacing */
+    --global--spacing-unit: calc(2 * var(--baseline-unit)); /* 20px */
+    --global--spacing-horizontal: calc(2.5 * var(--baseline-unit)); /* 25px */
+    --global--spacing-vertical: calc(2.5 * var(--baseline-unit)); /* 25px */
+
+    /* Borders */
+    --global--border-width: 3px;
+    --global--border-radius: 3px;
+    --global--border-color: var(--global--color-border);
+}

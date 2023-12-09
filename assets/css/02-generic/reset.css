@@ -1,0 +1,128 @@
+/* RESET
+* Borrowed from https://themes.trac.wordpress.org/browser/twentytwentyone/2.0/assets/sass/03-generic/reset.scss.
+ * Reset specific elements to make them easier to style in other contexts.
+ */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+form,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Apply generic border-box to all elements.
+ * See:
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+html {
+    /* Apply border-box across the entire page. */
+    font-family: var(--global--font-primary);
+    line-height: var(--global--line-height-body);
+    /* HTML resets */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/**
+ * Relax the definition a bit, to allow components to override it manually.
+ */
+* {
+    &,
+    &::before,
+    &::after {
+        box-sizing: inherit;
+        border-style: none;
+    }
+}
+
+/* Body resets */
+body {
+    font-size: var(--global--font-size-base);
+    font-weight: normal;
+    text-align: left;
+    color: var(--global--color-primary);
+    background-color: var(--global--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading--font-family);
+    font-weight: var(--heading--font-weight);
+    clear: both;
+
+    strong {
+        font-weight: var(--heading--font-weight-strong);
+    }
+}
+
+h1 {
+    font-size: var(--heading--font-size-h1);
+    line-height: var(--heading--line-height-h1);
+    letter-spacing: var(--heading--letter-spacing-h1);
+}
+
+h2 {
+    font-size: var(--heading--font-size-h2);
+    line-height: var(--heading--line-height-h2);
+    letter-spacing: var(--heading--letter-spacing-h2);
+}
+
+h3 {
+    font-size: var(--heading--font-size-h3);
+    line-height: var(--heading--line-height-h3);
+    letter-spacing: var(--heading--letter-spacing-h3);
+}
+
+h4 {
+    font-size: var(--heading--font-size-h4);
+    font-weight: var(--heading--font-weight-strong);
+    line-height: var(--heading--line-height-h4);
+    letter-spacing: var(--heading--letter-spacing-h4);
+}
+
+h5 {
+    font-size: var(--heading--font-size-h5);
+    font-weight: var(--heading--font-weight-strong);
+    line-height: var(--heading--line-height-h5);
+    letter-spacing: var(--heading--letter-spacing-h5);
+}
+
+h6 {
+    font-size: var(--heading--font-size-h6);
+    font-weight: var(--heading--font-weight-strong);
+    line-height: var(--heading--line-height-h6);
+    letter-spacing: var(--heading--letter-spacing-h6);
+}
+
+
+button {
+    cursor: pointer;
+}
+
+figcaption kbd {
+    font-family: var(--global--font-primary);
+}
