@@ -1,3 +1,53 @@
 /* HERO
  *
  */
+
+
+.hero {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: start;
+    max-height: 50vh;
+    padding: 200px;
+    color: var(--global--color-floral-white);
+    background: var(--global--color-eerie-black);
+
+    .hero-banner__image-background {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    &::after {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        opacity: 0.9;
+        background: var(--global--color-eerie-black);
+    }
+
+    .hero-inner-container {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        gap: var(--global--spacing-vertical);
+    }
+
+    .hero-title{
+        display:flex;
+        flex-direction: column;
+        gap: var(--global--spacing-vertical);
+    }
+
+}
