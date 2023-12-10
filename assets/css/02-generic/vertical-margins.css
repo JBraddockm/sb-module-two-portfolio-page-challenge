@@ -1,0 +1,16 @@
+.container > * {
+    margin-top: calc(3 * var(--global--spacing-vertical));
+    margin-bottom: calc(2 * var(--global--spacing-vertical));
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: calc(2 * var(--global--spacing-vertical));
+    }
+}
+
+p{
+    margin-bottom: var(--global--spacing-vertical);
+}
