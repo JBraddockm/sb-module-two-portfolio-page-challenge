@@ -51,13 +51,10 @@ html {
 /**
  * Relax the definition a bit, to allow components to override it manually.
  */
-* {
-    &,
-    &::before,
-    &::after {
-        box-sizing: inherit;
-        border-style: none;
-    }
+
+*:before, *:after{
+    box-sizing: inherit;
+    border-style: none;
 }
 
 /* Body resets */

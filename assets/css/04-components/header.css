@@ -1,3 +1,35 @@
 /* HEADER SECTION
  *
  */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--global--spacing-vertical) var(--global--spacing-horizontal);
+    color: var(--global--color-floral-white);
+    background-color: var(--global--color-eerie-black);
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+
+        .menu {
+            display: flex;
+            align-content: center;
+            justify-content: start;
+            list-style-type: none;
+            gap: var(--global--spacing-horizontal);
+        }
+
+        .menu-item a {
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: var(--global--color-floral-white);
+
+            &:hover {
+                border-bottom: var(--global--border-width) dotted var(--global--border-color);
+            }
+        }
+    }
+}
