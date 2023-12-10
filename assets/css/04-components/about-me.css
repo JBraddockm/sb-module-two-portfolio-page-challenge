@@ -1,0 +1,21 @@
+/* ABOUT ME SECTION
+ *
+ */
+
+.about {
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+        padding: calc(var(--global--spacing-vertical) * 2) calc(var(--global--spacing-horizontal) * 2);
+        gap: var(--global--spacing-horizontal);
+
+        .about-text {
+            flex-basis: 60%;
+        }
+
+        span {
+            border-right: var(--global--border-width) dotted var(--global--border-color);
+        }
+    }
+}
+
