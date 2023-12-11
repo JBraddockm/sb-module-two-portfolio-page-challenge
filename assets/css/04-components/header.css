@@ -9,6 +9,7 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
+        gap: var(--global--spacing-vertical);
         flex-direction: column;
 
     }
