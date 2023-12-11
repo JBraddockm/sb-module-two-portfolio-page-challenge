@@ -2,14 +2,11 @@
  *
  */
 
-
 .hero {
     position: relative;
-    display: flex;
     overflow: hidden;
-    justify-content: start;
-    max-height: 50vh;
-    padding: 200px;
+    max-height: 350px;
+    padding: calc(var(--global--spacing-vertical) * 2) var(--global--spacing-horizontal);
     color: var(--global--color-floral-white);
     background: var(--global--color-eerie-black);
 
@@ -40,14 +37,23 @@
         z-index: 3;
         display: flex;
         flex-direction: column;
-        max-width: 1200px;
         gap: var(--global--spacing-vertical);
-    }
 
-    .hero-title{
-        display:flex;
-        flex-direction: column;
-        gap: var(--global--spacing-vertical);
-    }
+        .hero-cta {
 
+            > * {
+                margin-top: var(--global--spacing-vertical);
+                margin-bottom: var(--global--spacing-vertical);
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
 }
