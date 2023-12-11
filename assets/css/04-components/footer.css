@@ -1,3 +1,16 @@
 /* FOOTER SECTION
  *
  */
+
+.footer{
+    background-color: var(--global--color-eerie-black);
+    padding: var(--global--spacing-vertical) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-text{
+        color: var(--global--color-floral-white);
+        margin-bottom: 0;
+    }
+}
