@@ -6,3 +6,7 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.divider{
+    border-right: var(--global--border-width) dotted var(--global--border-color);
+}
