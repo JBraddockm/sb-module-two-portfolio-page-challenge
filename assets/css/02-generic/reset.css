@@ -1,5 +1,5 @@
 /* RESET
-* Borrowed from https://themes.trac.wordpress.org/browser/twentytwentyone/2.0/assets/sass/03-generic/reset.scss.
+* Based on https://themes.trac.wordpress.org/browser/twentytwentyone/2.0/assets/sass/03-generic/reset.scss.
  * Reset specific elements to make them easier to style in other contexts.
  */
 
@@ -64,6 +64,18 @@ body {
     text-align: left;
     color: var(--global--color-primary);
     background-color: var(--global--color-background);
+}
+
+a {
+    color: var(--global--link-color);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+
+    &:hover {
+        text-decoration-style: dotted;
+        text-decoration-thickness: var(--global--border-width);
+        text-decoration-color: var(--global--link-hover-color);
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

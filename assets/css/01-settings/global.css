@@ -86,4 +86,9 @@
     --global--border-width: 3px;
     --global--border-radius: 3px;
     --global--border-color: var(--global--color-border);
+
+    /* Links */
+    --global--link-color: var(--global--color-eerie-black);
+    --global--link-hover-color: var(--global--color-flame);
+
 }

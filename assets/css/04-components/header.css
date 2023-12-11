@@ -15,7 +15,6 @@
 
         .menu {
             display: flex;
-            align-content: center;
             justify-content: start;
             list-style-type: none;
             gap: var(--global--spacing-horizontal);
@@ -23,13 +22,8 @@
 
         .menu-item a {
             font-weight: 600;
-            text-decoration: none;
             text-transform: uppercase;
             color: var(--global--color-floral-white);
-
-            &:hover {
-                border-bottom: var(--global--border-width) dotted var(--global--border-color);
-            }
         }
     }
 }
