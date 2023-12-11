@@ -3,19 +3,28 @@
  */
 
 .about {
+    padding: 0 var(--global--spacing-horizontal);
+
     .about-container {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         padding-top: calc(var(--global--spacing-vertical) * 2);
         gap: var(--global--spacing-horizontal);
 
-        .about-text {
-            flex-basis: 60%;
+        .divider {
+            border-top: var(--global--border-width) dotted var(--global--border-color);
         }
+    }
 
-        span {
-            border-right: var(--global--border-width) dotted var(--global--border-color);
+    @media (min-width: 576px) {
+        .about-container {
+            flex-direction: row;
         }
+    }
+
+    .about-text {
+        flex-basis: 60%;
     }
 }
 
