@@ -1,3 +1,67 @@
 /* SELECTED WORK SECTION
  *
 */
+
+.portfolio {
+
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--global--spacing-vertical);
+
+        .portfolio-item {
+            position: relative;
+            display: flex;
+            overflow: clip;
+            align-items: end;
+            min-height: 300px;
+            transition: box-shadow .5s;
+            box-shadow: rgba(37, 36, 34, .2) 0 8px 24px;
+
+            &:hover {
+                box-shadow: rgba(37, 36, 34, .6) 0 8px 24px;
+            }
+
+            &.portfolio-item-featured {
+                min-height: 500px;
+                grid-column: 1 / span 2;
+            }
+
+            .portfolio-item__link {
+                position: absolute;
+                z-index: 3;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            .portfolio-item-cover__background {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .portfolio-item-cover__inner-container {
+                position: relative;
+                z-index: 2;
+                margin: calc(var(--global--spacing-horizontal) / 2);
+                padding: calc(var(--global--spacing-horizontal) / 2);
+                opacity: 0.8;
+                color: var(--global--color-floral-white);
+                background: var(--global--color-eerie-black);
+
+                .portfolio-item-details {
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+
+    }
+}
