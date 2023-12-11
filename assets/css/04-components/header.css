@@ -1,13 +1,23 @@
-/* HEADER SECTION
- *
- */
+/* HEADER SECTION */
 
 .header {
-    display: flex;
-    justify-content: space-around;
     padding: var(--global--spacing-vertical) var(--global--spacing-horizontal);
     color: var(--global--color-floral-white);
     background-color: var(--global--color-eerie-black);
+
+    .header-wrap {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+    @media (min-width: 768px) {
+        .header-wrap {
+            flex-direction: row;
+        }
+    }
 
     .nav-menu {
         display: flex;
