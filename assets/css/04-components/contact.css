@@ -3,10 +3,17 @@
  */
 
 .contact {
+    padding: 0 var(--global--spacing-horizontal);
+
     .contact-container {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         gap: var(--global--spacing-horizontal);
+
+        .divider {
+            border-top: var(--global--border-width) dotted var(--global--border-color);
+        }
 
         .contact-links {
             display: flex;
@@ -15,19 +22,12 @@
             justify-content: start;
             list-style-type: none;
             gap: var(--global--spacing-horizontal);
+        }
+    }
 
-            .contact-link {
-                svg {
-                    width: 30px;
-                    height: 30px;
-                    vertical-align: middle;
-
-                    &:hover {
-                        transition: transform .1s ease;
-                        transform: scale(1.1);
-                    }
-                }
-            }
+    @media (min-width: 576px) {
+        .contact-container {
+            flex-direction: row;
         }
     }
 }
