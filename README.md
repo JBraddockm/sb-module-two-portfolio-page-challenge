@@ -34,8 +34,8 @@ N/A
 The application has the following features and best practices implemented.
 
 ![Google Pagespeed Score](google-pagespeed-insights-result.png)
-A custom caching solution is not possible to set in GitHub pages, hence the Performance score 99.
-The app has the same score in mobile.
+A custom caching solution is not possible to set in GitHub pages, and using Google Font affects performance, hence the Performance score 98.
+The app has the same score in mobile, except for performance, which is 89 due to Google Font usage.
 
 **HTML**
 * Semantic HTML elements
